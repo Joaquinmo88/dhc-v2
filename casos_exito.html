@@ -1,0 +1,44 @@
+---
+title: Casos de exito
+titleHead: DHC | Empresa con un extenso catalogo de trabajos exitosos por toda la república Mexicana
+description: Empresa con un extenso catalogo de trabajos exitosos realizados en diferentes puntos de la república Mexicana, contamos con galerías que comprueban los éxitos
+permalink: /casos_exito/
+breadcrumb: Casos exito
+layout: section
+---
+
+<section class="bg-white">
+    <div class="conteiner-fluid">
+        <div class="container">
+            <div class="row">
+                {% for post in site.posts%}
+                <div class="col-md-4 p-3">
+                    <div class="last-dhc-projects">
+                        <div class="position-relative">
+                            <img src="/assets/images/casos_de_exito/{{post.image}}" class="img-fluid" />
+                            <!-- <div class="calendar-day">
+                                <span>{{post.day}}</span>
+                                <span>{{post.month}}</span>
+                            </div> -->
+                        </div>
+                        <div class="blog-description p-2">
+                            <h2>
+                                <span class="clearfix">{{post.title}}</span>
+                                <span class="small text-secondary">
+                                    <!-- <i class="far fa-user mr-2"></i> -->
+                                    <small class="text-uppercase">Luciano Carmona A.</small>
+                                </span>
+                            </h2>
+                            <p>{{ post.description }}</p>
+                        </div>
+                        <div class="footer">
+                            <a href="{{post.url}}">Galería<i class="far fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

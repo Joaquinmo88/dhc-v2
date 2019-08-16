@@ -1,2 +1,2 @@
-# dhc-v2
-Restauradores
+# dhc
+bundle exec jekyll serve

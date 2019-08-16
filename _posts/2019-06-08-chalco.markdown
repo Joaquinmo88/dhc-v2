@@ -1,0 +1,48 @@
+---
+layout: detail_caso_exito
+permalink: /chalco/
+image: chalco.jpg
+title: "Chalco"
+description: "Restauración de copulin, pintura de torre, inyección de grietas en cúpula, coro y campanario, reposición de partes superiores de arcadas además del tratamiento al porton principal reposición de duela pintura en sacristías de la iglesia de Chalco de Díaz, Estado de México..."
+---
+
+<div class="container-fluid mt-3 pb-3">
+    <div class="container bg-white">
+        <div class="p-5 ">
+            <h1 class="cnt-title">{{page.title}}</h1>
+            <p>
+                Para el equipo de DHC ha sido un honor poder reconstruir y rehabilitar el copulin, pintura de torre, inyección de grietas en cúpula, coro y campanario, reposición de partes superiores de arcadas además del tratamiento al porton principal reposición de duela pintura en sacristías de la iglesia de Chalco de Díaz, Estado de México conservando la naturalidad y los detalles arquitectónicos con los que cuenta por el gran valor que representa debido a su antigüedad.
+            </p>
+            <p class="text-inportant-resalt">
+                <em>Todo el trabajo realizado a la iglesia fue con material 100% natural.</em>
+            </p>
+        </div>
+        <div id="gallery" class="container-gallery">
+            {% for i in (1..20) %}
+            <img alt="{{page.title}}" src="/assets/images/gallerys/chalco/arcadas/thumbnail/{{i}}.jpg"
+                data-image="/assets/images/gallerys/chalco/arcadas/{{i}}.jpg" data-description="{{page.title}}">
+            {% endfor %}
+        </div>
+        <h2 class="separador-gallery"><span>Chalco Exterior</span></h2>
+        <div id="gallery-1" class="container-gallery">
+            {% for i in (1..45) %}
+            <img alt="{{page.title}}" src="/assets/images/gallerys/chalco/chalco-exterior/thumbnail/{{i}}.jpg"
+                data-image="/assets/images/gallerys/chalco/chalco-exterior/{{i}}.jpg" data-description="{{page.title}}">
+            {% endfor %}
+        </div>
+        <h2 class="separador-gallery"><span>Chalco Interior</span></h2>
+        <div id="gallery-2" class="container-gallery">
+            {% for i in (1..35) %}
+            <img alt="{{page.title}}" src="/assets/images/gallerys/chalco/chalco-interior/thumbnail/{{i}}.jpg"
+                data-image="/assets/images/gallerys/chalco/chalco-interior/{{i}}.jpg" data-description="{{page.title}}">
+            {% endfor %}
+        </div>
+        <h2 class="separador-gallery"><span>Porton</span></h2>
+        <div id="gallery-2" class="container-gallery">
+            {% for i in (1..11) %}
+            <img alt="{{page.title}}" src="/assets/images/gallerys/chalco/porton/thumbnail/{{i}}.jpg"
+                data-image="/assets/images/gallerys/chalco/porton/{{i}}.jpg" data-description="{{page.title}}">
+            {% endfor %}
+        </div>
+    </div>
+</div>
